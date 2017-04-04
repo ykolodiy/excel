@@ -11,7 +11,7 @@ public class ReadExcelData {
 
 }
 //select if data is at another column =IF(ISERROR(VLOOKUP(E9,'Project Overview'!M:M,1,FALSE)),"OUT","KEEP")
-
+//custom formula to color row =$C:$C="Fixed"  color if line when word is present
 
 =================================================================================
 	
