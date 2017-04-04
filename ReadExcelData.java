@@ -10,7 +10,7 @@ public class ReadExcelData {
 	}
 
 }
-
+//select if data is at another column =IF(ISERROR(VLOOKUP(E9,'Project Overview'!M:M,1,FALSE)),"OUT","KEEP")
 
 
 =================================================================================
