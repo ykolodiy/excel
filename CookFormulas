@@ -1,0 +1,23 @@
+some cook excel functions:
+=COUNTIF(Cons!$A$2:$A$3473,"*"&A2&"*")>0
+
+if text in A2 present in range $A$2:$A$3473 of other sheet: true, false
+"*"&A2&"*" - instead u can use just A2 but it should be strict match
+________________
+
+
+=ADDRESS(MIN(IF(NOT(ISERROR(FIND(A2,Cons!$A$2:$A$3473,1))),ROW(Cons!$A$2:$A$3473),"")),1)
+
+this bitch gives you location of cell where A2 is found on another range Cons!$A$2:$A$3473. 
+Insert formula and insted enter press ctrl shift enter
+______________________________
+
+
+this convert text as formula into formula
+1. Hold down the ALT + F11 keys, and it opens the Microsoft Visual Basic for Applications window.
+2. Click Insert > Module, and paste the following code in the Module Window.
+
+Function Eval(Ref As String)
+Application.Volatile
+Eval = Evaluate(Ref)
+End Function
