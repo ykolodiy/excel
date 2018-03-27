@@ -22,7 +22,8 @@ Application.Volatile
 Eval = Evaluate(Ref)
 End Function
 ____________________________________
-
+=COUNTIF($C$2:$C$43244,"2")
+______________________
 
 custom formula to color row =$C:$C="Fixed"				
 				
