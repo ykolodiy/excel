@@ -21,6 +21,9 @@ Function Eval(Ref As String)
 Application.Volatile
 Eval = Evaluate(Ref)
 End Function
+
+
+_ now use it in excel = Eval(A2)
 ____________________________________
 =COUNTIF($C$2:$C$43244,"2")
 ______________________
