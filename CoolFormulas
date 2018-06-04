@@ -31,3 +31,6 @@ ______________________
 custom formula to color row =$C:$C="Fixed"				
 				
 "=MID(A2, FIND(",", A2, FIND(",", A2)+1)+1,256)"				select second space and takes text to columns
+
+if cell contains this or that https://exceljet.net/formula/if-cell-contains-this-or-that
+=IF(SUM(COUNTIF(B5,{"*text1*","*text2*"})),"x","")
