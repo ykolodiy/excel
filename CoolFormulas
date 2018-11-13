@@ -39,3 +39,6 @@ if cell contains this or that https://exceljet.net/formula/if-cell-contains-this
 remove last char
 =LEFT(A1,LEN(A1)-1)
 
+Count specific characters in a cell
+=LEN(A1)-LEN(SUBSTITUTE(A1,"a",""))
+
