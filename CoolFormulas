@@ -34,3 +34,8 @@ custom formula to color row =$C:$C="Fixed"
 
 if cell contains this or that https://exceljet.net/formula/if-cell-contains-this-or-that
 =IF(SUM(COUNTIF(B5,{"*text1*","*text2*"})),"x","")
+
+
+remove last char
+=LEFT(A1,LEN(A1)-1)
+
