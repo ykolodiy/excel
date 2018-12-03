@@ -45,3 +45,7 @@ Count specific characters in a cell
 
 remove text after last char "\"
 =LEFT(A1, FIND(CHAR(1), SUBSTITUTE(A1, "\", CHAR(1), LEN(A1)-LEN(SUBSTITUTE(A1, "\", ""))))-1)
+
+get text after last chat "\"
+
+TRIM(RIGHT(SUBSTITUTE(A1,"\",REPT(" ",LEN(A1))),LEN(A1)))
