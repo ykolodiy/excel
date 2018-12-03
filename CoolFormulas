@@ -42,3 +42,6 @@ remove last char
 Count specific characters in a cell
 =LEN(A1)-LEN(SUBSTITUTE(A1,"a",""))
 
+
+remove text after last char "\"
+=LEFT(A1, FIND(CHAR(1), SUBSTITUTE(A1, "\", CHAR(1), LEN(A1)-LEN(SUBSTITUTE(A1, "\", ""))))-1)
